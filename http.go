@@ -41,7 +41,7 @@ type HTTPMonitor struct {
 }
 
 // TODO: test
-func (monitor *HTTPMonitor) test() bool {
+func (monitor *HTTPMonitor) Test() bool {
 	req, err := http.NewRequest(monitor.Method, monitor.Target, nil)
 	for k, v := range monitor.Headers {
 		req.Header.Add(k, v)

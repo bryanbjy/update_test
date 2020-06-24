@@ -16,7 +16,7 @@ type MonitorInterface interface {
 	ClockStart(*CachetMonitor, MonitorInterface, *sync.WaitGroup)
 	ClockStop()
 	tick(MonitorInterface)
-	test() bool
+	Test() bool
 
 	Validate() []string
 	GetMonitor() *AbstractMonitor

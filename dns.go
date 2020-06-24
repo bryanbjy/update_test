@@ -61,7 +61,7 @@ func (monitor *DNSMonitor) Validate() []string {
 	return errs
 }
 
-func (monitor *DNSMonitor) test() bool {
+func (monitor *DNSMonitor) Test() bool {
 	m := new(dns.Msg)
 	m.SetQuestion(dns.Fqdn(monitor.Target), monitor.question)
 	m.RecursionDesired = true
